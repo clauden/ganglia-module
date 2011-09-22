@@ -1,0 +1,16 @@
+modules {
+	module {
+		name = "foo"
+		language = "python"
+	}
+}
+
+collection_group {
+	collect_every = 10
+	# collect_once = yes
+	time_threshold = 30
+	metric {
+		name = "foo"
+		title = "example instrumentation"
+	}
+}
